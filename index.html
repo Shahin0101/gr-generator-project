@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gradient Generator</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="colors">
+            <input type="color" id="color-a" value="#1488cc">
+            <input type="color" id="color-b" value="#2b32b2">
+        </div>
+        <div class="buttons">
+            <button  data-direction="to top">
+                <i class="fas fa-arrow-up" data-direction="to top"></i>
+            </button>
+            <button  data-direction=" to bottom"class="active">
+                <i class="fas fa-arrow-down"  data-direction=" to bottom"></i>
+            </button>
+            <button data-direction="to right">
+                <i class="fas fa-arrow-right" data-direction="to right"></i>
+            </button>
+            <button  data-direction="to left">
+                <i class="fas fa-arrow-left" data-direction="to left"></i>
+            </button>
+            <button  data-direction="to top right" class="rotate-icon">
+                <i class="fas fa-arrow-up" data-direction="to top right"></i>
+            </button>
+            <button data-direction="to bottom left" class="rotate-icon">
+                <i class="fas fa-arrow-down" data-direction="to bottom left"></i>
+            </button>
+            <button data-direction="to bootom right" class="rotate-icon">
+                <i class="fas fa-arrow-right" data-direction="to bootom right"></i>
+            </button>
+            <button data-direction="to top left" class="rotate-icon">
+                <i class="fas fa-arrow-left"  data-direction="to top left"></i>
+            </button>
+        </div>
+        <button id="submit">Generate</button>
+        <div class="output">
+            <textarea id="code" rows="2"></textarea>
+            <button id="copy">Copy</button>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
